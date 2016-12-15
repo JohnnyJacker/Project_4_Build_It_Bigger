@@ -18,9 +18,9 @@ task stringsAndTypes {
         println "Nice work abbreviating the task name"
 
         // TODO: Create a variable named foo and assign it the value 4.2
-
+//        def foo = 4.5
         // TODO: Print the value and class of foo
-
+//        println "$foo"
         // TODO: Use string interpolation to print the square root of 127
         // HINT: http://docs.oracle.com/javase/7/docs/api/java/lang/Math.html
 
@@ -33,6 +33,9 @@ task stringsAndTypes {
         def hello = "Hello, Jeremy."
 
         // TODO: Use `toUpperCase` to capitalize and print my name
+
+
+
 
     }
 }
