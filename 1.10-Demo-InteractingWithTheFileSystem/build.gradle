@@ -18,6 +18,7 @@ directory.
 
 */
 
+//  This creates a task of type Copy that copies files from images folder into a new folder called build
 task copyImages(type: Copy) {
     from 'images'
     into 'build'
