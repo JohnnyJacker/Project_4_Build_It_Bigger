@@ -15,3 +15,15 @@ Exercises:
 4. Run the "hello" task and observe the output.
 
 */
+
+
+class HelloTask extends DefaultTask {
+    @TaskAction
+    void doAction() {
+        println 'Executing my custom task'
+    }
+}
+
+task hello (type:HelloTask)
+
+// It's the @TaskAction annotation that tells Gradle what method should be the action of tasks created from your class
