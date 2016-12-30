@@ -21,14 +21,20 @@ Exercises:
 7. CHALLENGE! Log "Catch me if you can" at DEBUG level, then use grep (or
     findstr on Windows) to find that message in the logs.
 
+
+https://docs.gradle.org/current/userguide/logging.html#sec:sending_your_own_log_messages
 */
 
 task hello(type: HelloTask)
 
 class HelloTask extends DefaultTask {
+
+
     @TaskAction
     void doAction() {
+        logging.info('Before Hello World prints')
         println 'Hello World'
+        logging.info('After Hello World prints')
     }
 }
 
@@ -37,3 +43,4 @@ task derpy << {
     primp "Herp de derp"
 }
 */
+
