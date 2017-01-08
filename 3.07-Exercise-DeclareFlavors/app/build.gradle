@@ -46,6 +46,18 @@ Uncomment the following line to use our solution.
 
 */
 
+android {
+productFlavors {
+    free {
+        applicationId "com.example.udacity.buildflavors.free"
+    }
+    paid {
+        applicationId "com.example.udacity.buildflavors.paid"
+    }
+}
+}
+
+
 //apply from:"solution.gradle"
 
 dependencies {

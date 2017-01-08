@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="product_flavor_name">Paid</string>
+    <string
+        name="joke">Q:  What do Women and hard-wood floors have in common? \n
+        A:  If you lay em right you can walk on em the rest of your life.
+    </string>
 </resources>

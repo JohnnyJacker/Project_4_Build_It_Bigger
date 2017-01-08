@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="product_flavor_name">Free</string>
+    <string
+        name="joke">Q:  Why did the cookie go to the hospital? \n
+                    A:  Because he felt crummy.
+    </string>
 </resources>
