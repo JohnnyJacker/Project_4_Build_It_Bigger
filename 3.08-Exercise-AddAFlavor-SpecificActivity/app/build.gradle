@@ -9,7 +9,7 @@ Exercises:
 
 1. Import the project into Android Studio.
 2. Build the project and deploy it onto a device (or emulator).
-3. Declare free and paid flavors, and replicate MainActivity across the flavors.
+3. Declare free and paid flavors, and replicate mainActivity across the flavors.
 4. Build and deploy both flavors of your app to confirm that everything still
    works.
 4. Add an activity to the paid flavor that tells a joke. Remember the manifest!
@@ -40,6 +40,17 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+android {
+    productFlavors {
+        free {
+            applicationId "com.example.udacity.flavorspecificactivity.free"
+        }
+        paid {
+            applicationId "com.example.udacity.flavorspecificactivity.paid"
         }
     }
 }
