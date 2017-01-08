@@ -23,8 +23,28 @@ https://docs.gradle.org/current/dsl/org.gradle.api.artifacts.Configuration.html
 
 */
 
+
+
+
 apply plugin: 'java'
 
 repositories {
     mavenCentral()
 }
+
+configurations {
+    deps
+    compile.extendsFrom deps
+}
+
+dependencies {
+    deps 'com.google.guava:guava:20.0'
+}
+
+task zipDeps(type: Zip) {
+
+    baseName = "dependencyArchive"
+    classifier = 'deps'
+    from configurations.deps
+}
+
